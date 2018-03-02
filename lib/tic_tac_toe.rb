@@ -94,7 +94,7 @@ def winner(board)
   end
 end
 
-def play
+def play(board)
   puts "Welcome to Tic Tac Toe!!!"
   board = [" "," "," "," "," "," "," "," "," "]
   until over?(board)
