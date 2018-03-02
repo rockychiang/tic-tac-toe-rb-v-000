@@ -49,4 +49,4 @@ def turn_count(board)
   board.each do |i| i == "X" || i == "O"
     counter += 1
   end
-end    
+end
