@@ -99,3 +99,10 @@ def play
   board = [" "," "," "," "," "," "," "," "," "]
   until over?(board)
     turn(board)
+    if won?(board)
+      puts "Congratulations player #{winner} won."
+    else
+      puts "The game ended in a draw. No one won."
+    end
+  end
+end
