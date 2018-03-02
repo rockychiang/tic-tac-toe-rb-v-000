@@ -84,3 +84,8 @@ end
 def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
+
+def winner(board)
+  w = won?(board)
+  win = board[w[0]]
+end
