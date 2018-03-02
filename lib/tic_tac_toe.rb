@@ -95,5 +95,6 @@ def winner(board)
 end
 
 def play
+  puts "Welcome to Tic Tac Toe!!!"
   board = [" "," "," "," "," "," "," "," "," "]
   turn(board)
