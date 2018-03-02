@@ -40,7 +40,8 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board,index)
-    move(board,index,current_player(board))
+    player = current_player(board)
+    move(board,index,player)
     display_board(board)
   else
     turn(board)
@@ -100,7 +101,6 @@ end
 def play(board)
   puts "Welcome to Tic Tac Toe!!!"
   until over?(board)
-    player = current_player
     turn(board)
     if won?(board)
       puts "Congratulations player won."
