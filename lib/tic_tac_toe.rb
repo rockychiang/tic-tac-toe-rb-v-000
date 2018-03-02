@@ -70,4 +70,5 @@ def won?(board)
     else
       p.all? {|j| j == p[0]}
     end
+  end
 end
