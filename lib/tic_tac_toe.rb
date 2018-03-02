@@ -93,3 +93,7 @@ def winner(board)
     win = board[w[0]]
   end
 end
+
+def play
+  board = [" "," "," "," "," "," "," "," "," "]
+  turn(board)
