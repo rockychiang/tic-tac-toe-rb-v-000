@@ -16,3 +16,6 @@ def display_board(board = [" "," "," "," "," "," "," "," "," "])
   11.times {print "-"}
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+
+def input_to_index(input)
+  index = input.to_i -1
