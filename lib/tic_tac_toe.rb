@@ -23,18 +23,6 @@ def input_to_index(input)
   index = input.to_i - 1
 end
 
-def move(board,index,player)
-  board[index] = player
-end
-
-def position_taken?(board,index)
-  !(board[index].nil? || board[index] == " ")
-end
-
-def valid_move?(board,index)
-  index.between?(0,8) && !position_taken?(board,index)
-end
-
 def turn_count(board)
   counter = 0
   board.each do |i|
@@ -51,6 +39,18 @@ def current_player(board)
   else
     "O"
   end
+end
+
+def move(board,index,player)
+  board[index] = player
+end
+
+def position_taken?(board,index)
+  !(board[index].nil? || board[index] == " ")
+end
+
+def valid_move?(board,index)
+  index.between?(0,8) && !position_taken?(board,index)
 end
 
 def turn(board)
