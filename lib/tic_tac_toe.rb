@@ -34,7 +34,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count(board) % 2
+  if turn_count(board) % 2 == 0
     "X"
   else
     "O"
@@ -100,7 +100,7 @@ end
 def play(board)
   puts "Welcome to Tic Tac Toe!!!"
   until over?(board)
-    puts "This is turn no#{turn_count(board)}, player #{current_player(board)}'s' turn."
+    puts "This is turn no:#{turn_count(board)}, player #{current_player(board)}'s turn."
     turn(board)
     if won?(board)
       puts "Congratulations player won."
