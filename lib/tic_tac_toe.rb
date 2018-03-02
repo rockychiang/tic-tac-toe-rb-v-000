@@ -96,7 +96,6 @@ end
 
 def play(board)
   puts "Welcome to Tic Tac Toe!!!"
-  board = [" "," "," "," "," "," "," "," "," "]
   until over?(board)
     turn(board)
     if won?(board)
