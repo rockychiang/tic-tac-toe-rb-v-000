@@ -97,5 +97,5 @@ end
 def play
   puts "Welcome to Tic Tac Toe!!!"
   board = [" "," "," "," "," "," "," "," "," "]
-  until over?
+  until over?(board)
     turn(board)
