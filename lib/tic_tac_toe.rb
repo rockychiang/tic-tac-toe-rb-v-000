@@ -103,7 +103,7 @@ def play(board)
     puts "This is turn no:#{turn_count(board)}, player #{current_player(board)}'s turn."
     turn(board)
     if won?(board)
-      puts "Congratulations player won."
+      puts "Congratulations #{winner(board)}!"
     elsif draw?(board)
       puts "The game ended in a draw. No one won."
     end
