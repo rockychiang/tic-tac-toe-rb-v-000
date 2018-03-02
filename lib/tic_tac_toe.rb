@@ -100,6 +100,7 @@ end
 def play(board)
   puts "Welcome to Tic Tac Toe!!!"
   until over?(board)
+    puts "player #{current_player(board)} turn."
     turn(board)
     if won?(board)
       puts "Congratulations player won."
