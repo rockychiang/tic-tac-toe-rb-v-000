@@ -63,5 +63,11 @@ def current_player(board)
 end
 
 def won?(board)
-
+  WIN_COMBINATIONS.find? do |i|
+    p = [board[i[0]], board[i[1]], board[i[2]]]
+    if p.include?(" ")
+      false
+    else
+      p.all? {|j| j == p[0]}
+    end
 end
