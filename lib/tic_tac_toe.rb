@@ -11,9 +11,11 @@ WIN_COMBINATIONS = [
 
 def display_board(board = [" "," "," "," "," "," "," "," "," "])
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
-  11.times {print "-"}
+  10.times {print "-"}
+  puts "-"
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
-  11.times {print "-"}
+  10.times {print "-"}
+  puts "-"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
