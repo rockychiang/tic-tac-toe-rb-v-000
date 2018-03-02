@@ -100,7 +100,7 @@ def play(board)
     turn(board)
     if won?(board)
       puts "Congratulations player won."
-    else
+    elsif draw?(board)
       puts "The game ended in a draw. No one won."
     end
   end
